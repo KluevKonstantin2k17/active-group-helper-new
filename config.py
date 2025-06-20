@@ -1,6 +1,6 @@
 # config.py
 
-BOT_TOKEN = "7261049088:AAExM2e681_rtl7TpFzDN8sHR8P1To3hMbE"        # Замени на свой токен от BotFather
-USER_ADMINS = [492322856]  # Только эти ID могут использовать команды /adduser и /removeuser
-CHAT_OK = -4551420186    # Чат для ОК
-CHAT_RADIO = -1002864508172  # Чат для радистов
+BOT_TOKEN = "YOUR_BOT_TOKEN"  # Замени на переменную окружения
+USER_ADMINS = [123456789]      # Твой Telegram ID (админ)
+CHAT_OK = -1001234567890       # Чат для ОК
+CHAT_RADIO = -1009876543210    # Чат для радистов
