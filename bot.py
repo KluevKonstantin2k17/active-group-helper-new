@@ -20,9 +20,12 @@ from database import (
 )
 import re
 
-storage = MemoryStorage()
-bot = Bot(token=config.BOT_TOKEN)
-dp = Dispatcher(storage=storage)
+bot_token = os.getenv("BOT_TOKEN")
+if not bot_token:
+    raise ValueError("BOT_TOKEN не установлен")
+
+bot = Bot(token=bot_token)
+dp = Dispatcher(storage=MemoryStorage())
 
 # Клавиатура
 kb_start = ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text="Нужна заявка?")]], resize_keyboard=True)
